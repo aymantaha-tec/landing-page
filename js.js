@@ -12,3 +12,18 @@ closeBtn.addEventListener("click", () => {
   searchBox.classList.remove("active");
   navBtnContainer.classList.remove("active");
 });
+
+const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu-btn");
+const menuOpen = document.querySelector(".menu-open");
+const menuClose = document.querySelector(".menu-close");
+
+menuOpen.addEventListener("click", () => {
+  menu.classList.add("active");
+  menuBtn.classList.add("active");
+});
+
+menuClose.addEventListener("click", () => {
+  menu.classList.remove("active");
+  menuBtn.classList.remove("active");
+});
