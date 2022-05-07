@@ -13,17 +13,21 @@ closeBtn.addEventListener("click", () => {
   navBtnContainer.classList.remove("active");
 });
 
-const menu = document.querySelector(".menu");
+// const menu = document.querySelector(".menu");
 const menuBtn = document.querySelector(".menu-btn");
 const menuOpen = document.querySelector(".menu-open");
 const menuClose = document.querySelector(".menu-close");
+const headingMain = document.querySelector(".heading-main");
+const navBar = document.querySelector(".nav");
 
 menuOpen.addEventListener("click", () => {
-  menu.classList.add("active");
   menuBtn.classList.add("active");
+  headingMain.classList.add("active");
+  navBar.classList.add("active");
 });
 
 menuClose.addEventListener("click", () => {
-  menu.classList.remove("active");
   menuBtn.classList.remove("active");
+  headingMain.classList.remove("active");
+  navBar.classList.remove("active");
 });
