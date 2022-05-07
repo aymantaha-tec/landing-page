@@ -51,6 +51,9 @@ header .container .nav a {
 .nav-btn img {
     position: absolute;
 }
+.menu {
+    display: none;
+}
 .nav-btn .close-btn {
     opacity: 0;
     pointer-events: none;
@@ -213,37 +216,85 @@ h1 {
 
     .container,
     .box-search {
-        width: 400px;
+        width: 100%;
     }
     header .container .nav {
         flex-direction: column;
         gap: 15px;
         position: relative;
         top: 72px;
-        background-color: #F5A05C;
+        background-color: #f5a05cd9;
         position: absolute;
         left: 0px;
         width: 100%;
-        padding: 27px 20px;
-    }
+        height: 100vh;
+        padding: 62px 20px;
+}
     h1 {
-        margin-top:110px ;
+        margin-top:200px ;
+    }
+    .menu {
+        display: block;
+        position: relative;
+        left: 80vw;
+        top: -248px;
+        width: 36px;
+    }
+    .menu-open {
+        position: absolute;
+        pointer-events: auto;
+        transition: 0.3;
+        -webkit-transition: 0.3;
+        -moz-transition: 0.3;
+        -ms-transition: 0.3;
+        -o-transition: 0.3;
+}
+    .menu-close {
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+}
+    .menu-btn.active .menu-open {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .menu-btn.active .menu-close {
+        opacity: 1;
+        pointer-events: auto;
     }
         .footer {
         flex-direction: column;
-        padding-bottom: 50px;
+            padding-bottom: 50px;
         }
         .box-search {
             position: relative;
             /* z-index: -1000; */
         }
-        .icon-search {
-            position: absolute;
-            top: -46px;
-            right: 1%;
-        }
+    .icon-search {
+        position: absolute;
+        top: 210px;
+        left: 20px;
+        z-index: 2;
+    }
         .box-search.active {
-            top :unset;
+            top: 233px;
+            z-index: 1;
+        }
+        .box-search input {
+    position: relative;
+    top: 25px;
+    width: 100%;
+        }
+        .bg-photo {
+            display: none;
+        } 
+        .photo img {
+            width: 300px;
+            margin-top: 92px;
         }
     }
 
