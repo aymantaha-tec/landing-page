@@ -30,4 +30,6 @@ menuClose.addEventListener("click", () => {
   menuBtn.classList.remove("active");
   headingMain.classList.remove("active");
   navBar.classList.remove("active");
+  searchBox.classList.remove("active");
+  navBtnContainer.classList.remove("active");
 });
